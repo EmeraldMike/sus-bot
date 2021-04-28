@@ -1,0 +1,2 @@
+# sus-bot
+OPENSUS bot
