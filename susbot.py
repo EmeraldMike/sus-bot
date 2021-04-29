@@ -24,5 +24,7 @@ async def sus(ctx, member: discord.Member=None):
     embed.set_footer(text=ctx.message.author)
     await ctx.send(embed=embed)
 
+async def imposter(ctx):
+await ctx.send('https://static.wikia.nocookie.net/jerma-lore/images/e/e3/JermaSus.jpg/revision/latest/top-crop/width/360/height/450?cb=20201206225609')
     
 sussy.run(DISCORD_TOKEN)
