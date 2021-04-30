@@ -31,4 +31,13 @@ async def imposter(ctx):
 async def info(ctx):
 	await ctx.send('SUS BOT by https://opensus.wtf ')
 
+@sussy.command()
+async def susimg(ctx):
+    susy = randrange(9)
+    convertedsusy = str(susy)
+    embed=discord.Embed(title="SUSY BOTY", url="https://opensus.wtf", description="This image is pretty sus ngl")
+    embed.set_thumbnail(url="https://opensus.wtf/assets/botimgs/" + convertedsusy + ".png")
+    embed.set_footer(text=ctx.message.author)
+    await ctx.send(embed=embed)
+
 sussy.run(DISCORD_TOKEN)
