@@ -26,5 +26,9 @@ async def sus(ctx, member: discord.Member=None):
 @sussy.command()
 async def imposter(ctx):
 	await ctx.send('https://static.wikia.nocookie.net/jerma-lore/images/e/e3/JermaSus.jpg/revision/latest/top-crop/width/360/height/450?cb=20201206225609')
-    
+
+@sussy.command()
+async def info(ctx):
+	await ctx.send('SUS BOT by https://opensus.wtf ')
+
 sussy.run(DISCORD_TOKEN)
