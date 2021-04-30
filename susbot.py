@@ -39,5 +39,13 @@ async def susimg(ctx):
     embed.set_thumbnail(url="https://opensus.wtf/assets/botimgs/" + convertedsusy + ".png")
     embed.set_footer(text=ctx.message.author)
     await ctx.send(embed=embed)
+@sussy.command()
+async def suscomit(ctx, member: discord.Member=None):
+    if member is None:
+        member = ctx.message.author
+    convertedmember = str(member)
+    embed=discord.Embed(title="SUSY BOTY", url="https://opensus.wtf", description=convertedmember + " Has comited SUS")
+    embed.set_thumbnail(url="https://opensus.wtf/assets/botimgs/thesus.png")
+    await ctx.send(embed=embed)
 
 sussy.run(DISCORD_TOKEN)
